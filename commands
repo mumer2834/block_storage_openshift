@@ -1,0 +1,21 @@
+# Volume Discovery results #
+oc get localvolumediscoveryresults
+
+# Get details about discovery results #
+oc describe localvolumediscoveryresults discovery-result_xyz
+
+# List available Storage Classes #
+oc get sc
+
+# List available PVs #
+oc get pv
+
+# Monitor the progress of the storage cluster, pods, and PVCs in the openshift-storage project #
+watch oc get storagecluster,pods -n openshift-storage
+
+# Show status of storage cluster #
+oc get storagecluster -n openshift-storage
+
+# Show details about ocs-storagecluster-ceph-rbd storage class #
+oc describe sc ocs-storagecluster-ceph-rbd
+
